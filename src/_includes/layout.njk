@@ -13,13 +13,14 @@ title: My default layout title
 
 <body>
   <nav>
-    <a href="/">Home</a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {% for nav in collections.nav %}
+        <li><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></li>
+      {% endfor %}
+    </ul>
   </nav>
   {{ content | safe }}
-
-  <!-- console.log the title and page data -->
-  {{ title | log }}
-  {{ page | log }}
 </body>
 
 </html>

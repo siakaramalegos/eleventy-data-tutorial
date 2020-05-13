@@ -1,0 +1,10 @@
+---
+layout: layout.njk
+title: My posts
+tags: ['nav']
+---
+
+<h1>{{ title }}</h1>
+
+{% set collection = collections.posts %}
+{% include "collection-list.njk" %}
