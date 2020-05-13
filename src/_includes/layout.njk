@@ -16,6 +16,10 @@ title: My default layout title
     <a href="/">Home</a>
   </nav>
   {{ content | safe }}
+
+  <!-- console.log the title and page data -->
+  {{ title | log }}
+  {{ page | log }}
 </body>
 
 </html>
