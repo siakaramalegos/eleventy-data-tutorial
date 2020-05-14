@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Pup party
+tags: ['nav']
+---
+
+<h1>My doggos</h1>
+<p>Much floof. Much fart.</p>
+
+<ul>
+  {% for dog in dogs %}
+  <li>{{ dog.name }} is a/an {{ dog.breed }} and likes {{ dog.favoritePasttime }}. {{ dog.name }}'s stink level from 1-5 is a {{ dog.stinkLevel }}</li>
+  {% endfor %}
+</ul>
+
+{{ dogs | log }}
