@@ -9,8 +9,9 @@ tags: ['nav']
 
 <ul>
   {% for dog in dogs %}
-  <li>{{ dog.name }} is a/an {{ dog.breed }} and likes {{ dog.favoritePasttime }}. {{ dog.name }}'s stink level from 1-5 is a {{ dog.stinkLevel }}</li>
+  <li>{{ dog.name }} is a/an {{ dog.breed }} and likes {{ dog.favoritePasttime }}. {{ dog.name }}'s stink level from 1-5 is a {{ dog.stinkLevel }}.</li>
   {% endfor %}
 </ul>
 
+<!-- TODO: delete random logs -->
 {{ dogs | log }}
